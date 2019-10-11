@@ -1,0 +1,531 @@
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+.swiper-slide {
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    background: url("https://oms-oss.oss-cn-beijing.aliyuncs.com/oms_share/year2019/art/bg.jpg") no-repeat;
+    background-size: 100% 100%;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+a,
+.music1,
+.music2 {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+
+.container {
+    position: relative;
+    width: 90%;
+    /* height: 70%; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.nextpage {
+    width: .8rem;
+    height: .81rem;
+    position: absolute;
+    left: 45%;
+    bottom: .2rem;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.music1,
+.music2 {
+    width: .8rem;
+    height: .8rem;
+    position: absolute;
+    right: .2rem;
+    top: .25rem;
+    z-index: 2;
+}
+
+.music2 {
+    display: none;
+}
+
+.top {
+    height: 2.02rem;
+    border: 1px solid #000;
+    border-radius: .15rem;
+    background: #fff;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.top p:nth-child(1) {
+    width: 1.27rem;
+    height: 1.3rem;
+    margin: .33rem .2rem .39rem .31rem;
+    box-flex-group: 1;
+    -webkit-box-flex-group: 1;
+}
+
+.top p:nth-child(2) {
+    /* width: 1.27rem;
+    height: 1.3rem; */
+    font-size: .4rem;
+    border-left: 2px solid #ABABAB;
+    text-align: left;
+    padding: .13rem 0 .27rem .27rem;
+    font-weight: 700;
+    box-flex-group: 2;
+    -webkit-box-flex-group: 2;
+}
+
+.connecting {
+    width: 100%;
+}
+
+.connecting p {
+    position: absolute;
+    top: 1.45rem;
+    width: .15rem;
+    height: .71rem;
+    z-index: 5;
+}
+
+
+/* -------------------------------------------- 所有页公用样式 -------------------------------------------- */
+
+.content1,
+.content2,
+.content3,
+.content5,
+.content6,
+.content7,
+.content8 {
+    position: relative;
+    height: 8.43rem;
+    border: 1px solid #000;
+    border-radius: .15rem;
+    background: #fff;
+    margin-top: .3rem;
+    z-index: 1;
+    font-size: .36rem;
+}
+
+.content5,
+.content6,
+.content7 {
+    height: 10.78rem;
+}
+
+.font48 {
+    font-size: .48rem;
+}
+
+.fontW600 {
+    font-weight: 700;
+}
+
+.content1 p,
+.content2 p,
+.content3 p,
+.content4 p,
+.content5 p,
+.content6 p,
+.content7 p,
+.content8 p {
+    margin: 0;
+}
+
+.content1 p:nth-child(1),
+.content2 p:nth-child(1),
+.content3 p:nth-child(1) {
+    margin-top: .44rem;
+    margin-bottom: .34rem;
+    line-height: .55rem;
+}
+
+.content1 p:nth-child(6),
+.content2 p:nth-child(6),
+.content3 p:nth-child(3) {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+}
+
+
+/* -------------------------------------------- 第一页 -------------------------------------------- */
+
+.content1 p:nth-child(4) {
+    position: absolute;
+    right: .47rem;
+    top: 2.55rem;
+    width: 3.43rem;
+    height: 1.94rem;
+    z-index: 2;
+}
+
+.content1 p:nth-child(5) {
+    position: absolute;
+    left: 4.25rem;
+    top: 4.22rem;
+    width: 1.28rem;
+    height: 1.78rem;
+    z-index: 2;
+}
+
+
+/* -------------------------------------------- 第二页 -------------------------------------------- */
+
+.content2 p:nth-child(2) {
+    position: absolute;
+    left: .6rem;
+    bottom: .99rem;
+    width: 1rem;
+    height: .98rem;
+    z-index: 2;
+}
+
+.content2 p:nth-child(3) {
+    position: absolute;
+    left: 1.87rem;
+    bottom: .75rem;
+    width: .94rem;
+    height: 1.18rem;
+    z-index: 2;
+}
+
+.content2 p:nth-child(4) {
+    position: absolute;
+    left: 2.43rem;
+    bottom: 4.1rem;
+    width: 2.23rem;
+    height: 1.26rem;
+    z-index: 2;
+    display: none;
+}
+
+.content2 p:nth-child(5) {
+    position: absolute;
+    right: .29rem;
+    bottom: 3.01rem;
+    width: 2.23rem;
+    height: 1.26rem;
+    z-index: 2;
+    display: none;
+}
+
+
+/* -------------------------------------------- 第三页 -------------------------------------------- */
+
+.content3 p:nth-child(2) {
+    position: absolute;
+    left: .54rem;
+    bottom: 3.31rem;
+    width: 2.94rem;
+    height: 1.67rem;
+    z-index: 2;
+}
+
+
+/* -------------------------------------------- 第四页 -------------------------------------------- */
+
+
+/* .content4 p:nth-child(1) {
+    font-size: 1.04rem;
+    color: #FEFEFE;
+    font-weight: 900;
+    -webkit-text-stroke: 3px #2E2F2E;
+    text-stroke: 3px #000;
+    position: absolute;
+    left: 50%;
+    top: 1.6rem;
+    transform: translateX(-50%);
+    z-index: 2;
+} */
+
+.content4 p:nth-child(1) {
+    width: 4.62rem;
+    height: 1.13rem;
+    position: absolute;
+    left: 50%;
+    top: 1.6rem;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.content4 p:nth-child(2) {
+    width: 100%;
+    font-size: .6rem;
+    color: #000000;
+    font-weight: 700;
+    position: absolute;
+    left: 50%;
+    top: 3.8rem;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.content4 p:nth-child(2) span {
+    font-size: .86rem;
+    color: #FAC043;
+    -webkit-text-stroke: 2px #000;
+    /* text-stroke: 3px #000; */
+}
+
+.content4 p:nth-child(3) {
+    width: 3.34rem;
+    height: 1.14rem;
+    line-height: 1.14rem;
+    font-size: .6rem;
+    color: #2E2F2E;
+    font-weight: 700;
+    background: url('https://oms-oss.oss-cn-beijing.aliyuncs.com/oms_share/year2019/art/8-2.png') no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 50%;
+    bottom: 2.5rem;
+    /* 3.71*/
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.content4 p:nth-child(3) a {
+    color: #2E2F2E;
+    text-decoration: none;
+}
+
+.content4 p:nth-child(4) {
+    width: 100%;
+    text-align: center;
+    font-size: .48rem;
+    color: #8A6411;
+    position: absolute;
+    left: 50%;
+    bottom: 1.33em;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+
+/* -------------------------------------------- 第五页 -------------------------------------------- */
+
+.content5 p:nth-child(1) {
+    width: 2.05rem;
+    height: 1.16rem;
+    position: absolute;
+    left: .76rem;
+    top: .56rem;
+    z-index: 2;
+}
+
+.content5 p:nth-child(2) {
+    width: 5.87rem;
+    height: 4.42rem;
+    position: absolute;
+    left: .55rem;
+    top: 1.53rem;
+    z-index: 2;
+    margin-bottom: 6.76rem;
+}
+
+.content5 p:nth-child(3) {
+    width: 100%;
+    text-align: center;
+    font-size: .36rem;
+    color: #000000;
+    font-weight: 700;
+    position: absolute;
+    left: 50%;
+    top: 6.74rem;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.content5 p:nth-child(4) {
+    width: 100%;
+    text-align: center;
+    font-size: .55rem;
+    color: #FAC043;
+    font-weight: 700;
+    position: absolute;
+    left: 50%;
+    bottom: 2.17rem;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.content5 p:nth-child(5) {
+    width: 4.1rem;
+    text-align: left;
+    font-size: .36rem;
+    color: #000000;
+    position: absolute;
+    left: 50%;
+    bottom: .56rem;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+
+/* -------------------------------------------- 第六页 -------------------------------------------- */
+
+.content6 p:nth-child(1),
+.content6 p:nth-child(3) {
+    text-align: left;
+    position: absolute;
+    left: .44rem;
+    width: 100%;
+    z-index: 2;
+}
+
+.content6 p:nth-child(1) {
+    top: .47rem;
+}
+
+.content6 p:nth-child(3) {
+    top: 5.79rem;
+}
+
+.content6 p:nth-child(2) {
+    position: absolute;
+    left: 50%;
+    top: 2.07rem;
+    width: 5.77rem;
+    height: 3.43rem;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.content6 p:nth-child(4) {
+    position: absolute;
+    left: 50%;
+    bottom: .35rem;
+    width: 5.73rem;
+    height: 3.82rem;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+
+/* -------------------------------------------- 第七页 -------------------------------------------- */
+
+.content7 p:nth-child(1),
+.content7 p:nth-child(3) {
+    text-align: left;
+    position: absolute;
+    left: .46rem;
+    width: 100%;
+    z-index: 2;
+}
+
+.content7 p:nth-child(1) {
+    top: .47rem;
+}
+
+.content7 p:nth-child(3) {
+    top: 5.54rem;
+}
+
+.content7 p:nth-child(2) {
+    position: absolute;
+    left: 50%;
+    top: 1.43rem;
+    width: 5.79rem;
+    height: 3.85rem;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.content7 p:nth-child(4) {
+    position: absolute;
+    left: 50%;
+    bottom: .26rem;
+    width: 5.71rem;
+    height: 3.78rem;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+
+/* -------------------------------------------- 第八页 -------------------------------------------- */
+
+.content8 p:nth-child(1) {
+    position: absolute;
+    left: .47rem;
+    top: .9rem;
+    width: 2.61rem;
+    height: 1.49rem;
+    z-index: 2;
+}
+
+.content8 p:nth-child(2) {
+    position: absolute;
+    left: 1.99rem;
+    top: .27rem;
+    width: 4.03rem;
+    height: 3.83rem;
+    z-index: 2;
+}
+
+.content8 p:nth-child(3) {
+    text-align: left;
+    position: absolute;
+    left: .37rem;
+    top: 3.86rem;
+    width: 100%;
+    height: .95rem;
+    z-index: 2;
+}
+
+.content8 p:nth-child(4) {
+    position: absolute;
+    left: 50%;
+    bottom: .31rem;
+    width: 5.8rem;
+    height: 3.54rem;
+    z-index: 2;
+    transform: translateX(-50%);
+}
